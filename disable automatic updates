@@ -1,0 +1,6 @@
+#关闭win11更新系统
+win+R：regedit //注册表编辑器
+HKEY_LOCAL_MACHINE --> SOFTWARE --> Microsoft --> WindowsUpdate --> UX -- > Settings
+右键新建-Dword(32位)值(D), 命名位“FlightSettingsMaxPauseDays” //名字必须一样，否则会不成功
+双击该文件，选择十进制，改数值为2000或以上，退出
+回电脑设置-Windows更新，选择新的暂停时间
